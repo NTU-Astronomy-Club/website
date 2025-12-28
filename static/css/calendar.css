@@ -1,0 +1,85 @@
+/* 行事曆頁面專屬樣式 */
+.calendar-section {
+    padding-top: 100px;
+}
+
+.calendar-controls {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.calendar-item {
+    display: flex;
+    align-items: center;
+    background: #0f0f1e;
+    padding: 10px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    /* 使用 YAML 傳進來的顏色 */
+    border-color: var(--cal-theme); 
+    font-size: 0.95rem;
+}
+
+.calendar-item:hover {
+    background: var(--cal-theme);
+    color: #fff;
+}
+
+.cal-toggle {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.calendar-frame-container {
+    background: #fff; /* 預防 Google 日曆載入前的閃爍 */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscribe-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sub-btn {
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sub-btn:hover {
+    background: var(--accent-color);
+    color: #000;
+}
+
+/* RWD 調整 */
+@media (max-width: 768px) {
+    .calendar-item {
+        width: 100%;
+    }
+}

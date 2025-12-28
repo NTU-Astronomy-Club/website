@@ -1,0 +1,20 @@
+# template
+# - image: "images/hero/{image}" 不需要加static噢
+#   title: ""
+#   caption: ""
+# e.g.:
+# - image: image: "images/hero/image1.jpg"
+#   title: "48th幹部悶的合照"
+#   caption: "2025/07/24 攝於觀星園"
+
+- image: "images/hero/image1.jpg"
+  title: "48th幹部悶的合照"
+  caption: "2025/07/24 攝於觀星園"
+- image: "images/hero/image2.jpg"
+  title: "114-1期末社員大會"
+  caption: "2025/12/04 第一屆天文辦論大賽end"
+- image: "images/hero/image3.jpg"
+  title: "Draco 和星座卡"
+  caption: "Sep, 2025. 社辦裝星座卡片"
+
+

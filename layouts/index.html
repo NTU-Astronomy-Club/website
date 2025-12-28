@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+<main>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                {{ range .Site.Data.hero }}
+                    <div class="slide">
+                        <img src="{{ .image | absURL }}" alt="{{ .title }}">
+                        <div class="slide-info">
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .caption }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+    
+    <!-- News -->
+    <section id="news">
+        <h2>──── 最新消息 ────</h2>
+        <div class="news-grid">
+            {{ $news := where .Site.RegularPages "Section" "news" }}
+            {{ $active := (where $news ".Params.archived" "!=" true) }}
+            {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+            {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+            {{ $ordered := union $pinned $normal }}
+            {{ range $ordered }}
+                <div class="news-card">
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                    <h3>{{ .Title }}</h3>
+                    <span class="news-date">
+                        {{ .Date.Format "2006-01-02" }}
+                    </span>
+                    <div class="news-info">
+                        {{ .Content | safeHTML }}
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+        </section>
+    
+</main>
+<script src="{{ "js/carousel.js" | relURL }}"></script>
+
+{{ end }}

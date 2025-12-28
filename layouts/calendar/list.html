@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="section calendar-section">
+    <div class="container">
+        <h1 class="section-title">社團行事曆</h1>
+        
+        <div class="calendar-controls">
+            <p><i class="fas fa-filter"></i> 篩選顯示內容：</p>
+            <div class="checkbox-group">
+                {{ range .Site.Data.calendars }}
+                <label class="calendar-item" style="--cal-theme: {{ .color }}">
+                    <input type="checkbox" class="cal-toggle" 
+                           value="{{ .cid }}" 
+                           data-color="{{ .color }}"
+                           {{ if .default }}checked{{ end }}>
+                    <span class="custom-checkbox"></span>
+                    {{ .name }}
+                </label>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="calendar-frame-container">
+            <iframe id="google-calendar" src="" style="border:0" width="100%" height="650" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="subscribe-section">
+            <h3><i class="fas fa-calendar-plus"></i> 加入你的 Google 日曆</h3>
+            <div class="subscribe-buttons">
+                {{ range .Site.Data.calendars }}
+                <a href="https://calendar.google.com/calendar/render?cid={{ .cid }}" target="_blank" class="sub-btn">
+                    訂閱「{{ .name }}」
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function updateCalendar() {
+        // 基本設定：隱藏標題(showTitle=0)、隱藏列印(showPrint=0)以符合網站風格
+        const baseUrl = "https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&showCalendars=0&ctz=Asia%2FTaipei";
+        const checkboxes = document.querySelectorAll('.cal-toggle');
+        const iframe = document.getElementById('google-calendar');
+        
+        let params = "";
+        checkboxes.forEach(cb => {
+            if (cb.checked) {
+                // 將 # 轉為 %23 以符合 URL 規範
+                const encodedColor = encodeURIComponent(cb.dataset.color);
+                params += `&src=${encodeURIComponent(cb.value)}&color=${encodedColor}`;
+            }
+        });
+
+        // 組合最終網址，如果都沒選就顯示一個空的狀態
+        iframe.src = params ? baseUrl + params : "about:blank";
+    }
+
+    // 綁定事件
+    document.querySelectorAll('.cal-toggle').forEach(cb => {
+        cb.addEventListener('change', updateCalendar);
+    });
+
+    // 初始執行
+    document.addEventListener('DOMContentLoaded', updateCalendar);
+</script>
+{{ end }}
