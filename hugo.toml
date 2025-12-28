@@ -1,3 +1,5 @@
 baseURL = 'https://ntu-astronomy-club.github.io/website/'
 languageCode = 'zh-tw'
 title = '臺大天文社 NTU Astronomy Club'
+canonifyURLs = true
+relativeURLs = true
