@@ -5,10 +5,9 @@
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/calendar.css" | relURL }}">
+    {{ partial "header.html" . }}
 </head>
 <body>
-
-    {{ partial "header.html" . }}
 
     {{ block "main" . }}
     {{ end }}
