@@ -2,9 +2,23 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="48th 教學兼網管 楊硯堯">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="臺大天文社官方網站，提供最新消息、社團介紹、活動行事曆、社團歷史和成果紀錄">
+    <meta name="keywords" content="臺大, 天文社, 官方網站, 天文, 社團, 星空, 臺大天文社, NTU Astronomy Club">
+    
     <title>{{ .Title }}</title>
+    <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/calendar.css" | relURL }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="臺大天文社官方網站，提供最新消息、社團介紹、活動行事曆、社團歷史和成果紀錄">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ "images/og-image.jpg" | relURL }}">
+
     {{ partial "header.html" . }}
 </head>
 <body>

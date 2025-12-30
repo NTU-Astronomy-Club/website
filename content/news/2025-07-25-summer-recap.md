@@ -6,7 +6,7 @@ draft: false          # 是否是草稿
 pinned: false        # 是否置頂（可省略）
 archived: false   # 是否典藏（可省略）
 
-image: "/images/news/03 夏觀回顧.png"
+image: "images/news/03 夏觀回顧.png"
 ---
 
 【夏季觀測回顧】

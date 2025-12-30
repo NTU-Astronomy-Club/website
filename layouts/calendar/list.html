@@ -10,7 +10,8 @@
                 <label class="calendar-item" style="--cal-theme: {{ .color }}">
                     <input  type="checkbox"
                             class="calendar-checkbox"
-                            data-url="src={{ .cid }}&color={{ .color }}"
+                            data-cid="{{ .cid }}"
+                            data-color="{{ .color}}"
                             {{ if .default }}checked{{ end }}>
                     {{ .name }}
                 </label>

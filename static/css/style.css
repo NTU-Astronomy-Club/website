@@ -166,6 +166,7 @@ footer {
     display: grid;
     grid-auto-rows: auto;
     padding: 1rem 1rem;
+    grid-gap: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -194,8 +195,8 @@ footer {
     margin-bottom: 1rem;
     overflow: hidden;
     height: auto;
-    width: 100%; 
-    max-width: 400px;
+    width: 100%;
+    padding: 0;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
