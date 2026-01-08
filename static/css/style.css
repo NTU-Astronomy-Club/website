@@ -361,6 +361,59 @@ footer {
   border: none;
   background-color: #0b0c1a;
 }
+
+/* history */
+.history {
+    display: flex;
+    gap: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;   
+}
+
+.history-sidebar {
+    position: fixed;
+    flex: 0 0 16rem;
+    border-right: 0.0625rem solid rgba(255,255,255,0.1);
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.history-title {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+.history-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.history-nav li {
+    margin-bottom: 0.75rem;
+    list-style: none;
+}
+
+.history-nav a {
+    color: #dcdcdc;
+    font-size: 1.0rem;
+    transition: color 0.3s;
+    padding: 0.7rem 0.5rem; 
+    display: inline-block; 
+    text-align: center; 
+    text-decoration:none;
+    border-radius: 0.4rem;
+}
+
+.history-nav a:hover {
+    background-color: #5c61ac3e; 
+    color: #8ab4f8;
+    text-decoration:underline;
+}
+
 /* contact us */
 .contact {
     padding: 0.5rem 3rem; 
