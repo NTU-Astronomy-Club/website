@@ -1,0 +1,103 @@
+.content {
+    max-width: 60rem;
+    margin: 0rem auto;
+    padding: 0.2rem 1.5rem;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    color: #dcdcdc;
+    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.content h2 {
+    margin: 1rem 0rem 1.5rem 0rem;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+}
+
+.content h3 {
+    margin: 1rem 0rem 1.5rem 0rem;
+    font-size: 1.1rem;
+    padding-left: 1.0rem;
+}
+
+.content p {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    color: #dcdcdc;
+}
+
+.content ul,
+.content ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.content li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content a {
+    color: #8aebf8;
+    text-decoration: underline;
+}
+
+.content a:hover {
+    color: #cef9ff;
+}
+
+.content blockquote {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: rgba(138,180,248,0.12);
+    border-left: 4px solid #8ab4f8;
+    border-radius: 0.4rem;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin: 3rem 0;
+}
+
+.content pre {
+    background: rgba(27,31,35,0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.content code {
+    background: rgba(27,31,35,0.05);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.content th,
+.content td {
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
