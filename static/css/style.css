@@ -346,14 +346,6 @@ footer {
     flex: 1;
 }
 
-.history {
-    display: flex;
-    gap: 3rem;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-}
-
 /* bylaws */
 .pdf-wrapper {
   margin-top: 2rem;
@@ -367,6 +359,13 @@ footer {
 }
 
 /* history */
+.history {
+    display: flex;
+    gap: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
 
 /* contact us */
 .contact {
