@@ -303,6 +303,7 @@ footer {
 
 /* side bar */
 .about-sidebar {
+    position: fixed;
     flex: 0 0 16rem;
     border-right: 0.0625rem solid rgba(255,255,255,0.1);
     padding-right: 2rem;
