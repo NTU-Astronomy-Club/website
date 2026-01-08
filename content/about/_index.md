@@ -1,3 +1,5 @@
 ---
-title: "臺大天文社 NTU Astronomy Club: 認識我們"
+title: "認識我們"
 ---
+
+臺大天文社在做些什麼？

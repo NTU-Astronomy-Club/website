@@ -15,7 +15,19 @@
     <main class="about-content">
         <article class="content-article">
             <h1>{{ .Title }}</h1>
-            {{ .Content }}
+                <p>以下為本社正式社團規章：</p>
+                <div class="pdf-wrapper">
+                    <iframe
+                        src="/docs/社團組織章程114.06.15.pdf"
+                        loading="lazy"
+                        class="pdf-embed"
+                    ></iframe>
+                </div>
+                <p>
+                    <a href="/docs/社團組織章程114.06.15.pdf" target="_blank" rel="noopener">
+                        以新分頁開啟 PDF
+                    </a>
+                </p>
         </article>
     </main>
 </section>
