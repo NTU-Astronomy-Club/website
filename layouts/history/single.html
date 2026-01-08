@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="history">
+    <aside class="history-sidebar">
+        <h2 class="history-title">往昔星辰</h2>
+
+        <ul class="history-nav">
+            <li><a href="/history/origin/">建站緣起</a></li>
+            <li><a href="/history/milestones">大事記</a></li>
+            <li><a href="/history/journals/">社刊</a></li>
+            <li><a href="/history/awards/">獲獎紀錄</a></li>
+            <li><a href="/history/memories/">各屆專屬紀錄</a></li>
+        </ul>
+    </aside>
+    
+    <main class="history-content">
+        
+        <article class="content"><h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </article>
+    </main>
+</section>
+{{ end }}
