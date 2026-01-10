@@ -18,3 +18,12 @@ Thumbs.db
 
 node_modules/
 dist/
+
+*.png
+*.PNG
+*.jpg
+*.jpeg
+*.JPG
+*.webp
+*.gif
+*.mp4
