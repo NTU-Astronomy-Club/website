@@ -1,6 +1,7 @@
 .post-meta {
     margin-top: 0rem;
     margin-bottom: 2rem;
+    margin-left: 0.2rem;
     font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
     font-size: 0.80rem;
     color: rgba(230, 230, 230, 0.65);
@@ -77,6 +78,13 @@
 }
 
 .content img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.content iframe {
     max-width: 100%;
     border-radius: 0.5rem;
     margin: 1.5rem auto;
