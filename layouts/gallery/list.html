@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="gallery">
+    {{ if eq .Paginator.PageNumber 1 }}
+    <section class="gallery-header">
+        <h1 class="gallery-title">{{ .Title }}</h1>
+        <div class="gallery-intro">
+            {{ .Content }}
+        </div>
+    </section>
+    {{ end }}
+</section>
+{{ end }}
