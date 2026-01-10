@@ -4,10 +4,10 @@ date: 2025-12-02 # 發文日期 (顯示)
 publishdate: 2025-12-02T21:00:00+08:00 # 發文日期
 
 draft: false          # 是否是草稿 
-pinned: true        # 是否置頂（可省略）
+pinned: false       # 是否置頂（可省略）
 archived: false     # 是否典藏（可省略）
 
-image: "images/news/13 冬觀.png"
+image: "images/news/news_3.png"
 
 ---
 

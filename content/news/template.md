@@ -7,7 +7,8 @@
 # pinned: false        # 是否置頂（可省略）
 # archived: false     # 是否典藏（可省略）
 
-# image: "/images/news/{img name}"
+# image: "https://drive.google.com/file/d/[file_id]/preview"
+# 記得要改成這樣的格式噢 (原本google drive 直接貼上可能是https://drive.google.com/file/d/[file_id]/view?usp=drive_link)
 # 下面那行只是確保 template.md 不會發出去！ 發的時候記得刪掉噢~
 draft: true
 ---

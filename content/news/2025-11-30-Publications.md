@@ -7,7 +7,7 @@ draft: false          # 是否是草稿
 pinned: false        # 是否置頂（可省略）
 archived: false     # 是否典藏（可省略）
 
-image: "images/news/09 社刊.png"
+image: "images/news/news_2.png"
 ---
 
 - 睽違五年的65社刊發行中，歡迎預購！

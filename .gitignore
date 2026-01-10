@@ -11,14 +11,17 @@ Thumbs.db
 .idea/
 *.swp
 
+# Sensitive configuration files
 .env
 *.key
 *.pem
 *.secret
 
+# Build directories
 node_modules/
 dist/
 
+# Big media files
 *.png
 *.PNG
 *.jpg
@@ -27,3 +30,7 @@ dist/
 *.webp
 *.gif
 *.mp4
+!hero_*.jpg
+!hero_*.png
+!news_*.jpg
+!news_*.png

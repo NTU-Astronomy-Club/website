@@ -29,7 +29,10 @@
             {{ $ordered := union $pinned $normal }}
             {{ range $ordered }}
                 <div class="news-card">
-                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                    <!-- 確保圖片存在 否則不顯示  -->
+                    {{ if .Params.image }}
+                        <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                    {{ end }}
                     <h3>{{ .Title }}</h3>
                     <span class="news-date">
                         {{ .Date.Format "2006-01-02" }}
