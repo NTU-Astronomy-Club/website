@@ -11,7 +11,7 @@
 
             {{ with .Params.cover }}
             <div class="night-stories-thumb">
-                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                <iframe src="{{ . | absURL }}" frameborder="0" alt="{{ $.Title }}"></iframe>
             </div>
             {{ end }}
 
