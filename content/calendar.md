@@ -1,3 +1,3 @@
 ---
-title: "臺大天文社 NTU Astronomy Club: 行事曆"
+title: "行事曆"
 ---
