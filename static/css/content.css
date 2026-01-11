@@ -15,6 +15,10 @@
     white-space: nowrap;
 }
 
+.post-meta .meta-separater {
+    opacity: 0.6;
+}
+
 .content {
     max-width: 55rem;
     margin: 0rem auto;

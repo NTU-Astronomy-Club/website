@@ -1,0 +1,27 @@
+<section class="night-stories-list">
+
+    <div class="night-stories-header">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p>
+    </div>
+
+    <div class="night-stories-items">
+        {{ range .Pages.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}" class="night-stories-item">
+
+            {{ with .Params.cover }}
+            <div class="night-stories-thumb">
+                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+            </div>
+            {{ end }}
+
+            <div class="night-stories-meta">
+                <h2>{{ .Title }}</h2>
+                {{ partial "post-meta.html" . }}
+                <p>{{ .Summary }}</p>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+
+</section>
