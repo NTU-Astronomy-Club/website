@@ -6,12 +6,17 @@
     </div>
 
     <div class="night-stories-items">
-        {{ range .Pages.ByDate.Reverse }}
+        {{ $list := .RegularPages }}
+        {{ $active := (where $list ".Params.archived" "!=" true) }}
+        {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+        {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+        {{ $ordered := union $pinned $normal }}
+        {{ range $ordered }}
         <a href="{{ .RelPermalink }}" class="night-stories-item">
 
             {{ with .Params.cover }}
             <div class="night-stories-thumb">
-                <iframe src="{{ . | absURL }}" frameborder="0" alt="{{ $.Title }}"></iframe>
+                <iframe src="{{ . | absURL }}" frameborder="0"></iframe>
             </div>
             {{ end }}
 

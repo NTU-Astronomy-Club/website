@@ -514,6 +514,22 @@ footer {
   background-color: var(--bg);
 }
 
+
+/* responsive iframe helper */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
 /* night-stories*/
 .night-stories {
     display: flex;
