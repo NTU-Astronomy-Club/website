@@ -5,5 +5,13 @@
     <a href="https://linktr.ee/ntuast" target="_blank" rel="noopener" title="Linktree"><i class="fa-solid fa-link fa-2x"></i></a>
 </div>
 
-<p> © {{ now.Year }} 臺大天文社 NTU Astronomy Club</p>
 <p> Email: ngc5566@gmail.com </p>
+<p> © {{ now.Year }} 臺大天文社 NTU Astronomy Club
+{{ if .IsPage }}
+    | 本頁最後更新：{{ .Lastmod.Format "2006-01-02" }}
+{{ else }}
+    | 最後更新：{{ .Site.Lastmod.Format "2006-01-02" }}
+{{ end }}
+</p>
+<p> 本網站由臺大天文社第48屆教學兼網管楊硯堯創建，{{ .Site.Data.footer.maintain}}維護 </p>
+
