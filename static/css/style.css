@@ -598,10 +598,21 @@ footer {
 }
 
 .night-stories-card h2 {
+    font-size: 1.2rem;
     margin: 0.75rem 0;
     color: #ffffff;
     letter-spacing: 0.1em;
     text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .night-stories-card h2 {
+        font-size: clamp(1rem, 5vw, 1.2rem);
+        margin: 0.75rem 0;
+        color: #ffffff;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
 }
 
 /* content*/
