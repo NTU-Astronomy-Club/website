@@ -1,9 +1,16 @@
-<section class="stories-list">
+{{ define "main" }}
+<section class="article">
+    {{ if eq .Paginator.PageNumber 1 }}
+        <section class="article-header">
+            <h1 class="article-title">{{ .Title }}</h1>
+            <div class="article-intro">
+                {{ .Content }}
+            </div>
+        </section>
+    {{ end }}
+</section>
 
-    <div class="night-stories-header">
-        <h1>{{ .Title }}</h1>
-        <p>{{ .Params.description }}</p>
-    </div>
+<section class="stories-list">
 
     <div class="stories-items">
         {{ $list := .RegularPages }}
@@ -30,3 +37,5 @@
     </div>
 
 </section>
+
+{{ end }}
