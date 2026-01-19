@@ -8,6 +8,7 @@
 # pinned: false        # 是否置頂（可省略）
 # archived: false     # 是否典藏（可省略）
 
+# session: ["48"] # 用於之後的分類
 # semester: ["114-1"] # 用於之後的分類
 # category: ["星導工作坊"] # 用於之後的分類
 

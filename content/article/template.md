@@ -9,6 +9,7 @@
 # archived: false     # 是否典藏（可省略）
 
 # summary: ""
+# session: ["48"] # 用於之後的分類
 
 # cover: "https://drive.google.com/file/d/1KrFOg_N17zIPutoOnlip6QHUOB39KPwH/preview" # 封面圖片
 # image: "https://drive.google.com/file/d/[file_id]/preview"
