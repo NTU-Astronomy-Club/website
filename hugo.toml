@@ -7,4 +7,8 @@ enableGitInfo = true
 [taxonomies]
   semester = "semesters"
   category = "categories"
+  session = "sessions"
+
+[markup.goldmark.renderer]
+  unsafe = true
 

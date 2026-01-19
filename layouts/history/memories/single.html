@@ -1,3 +1,53 @@
 {{ define "main" }}
-    {{ partial "night-stories-single.html" . }}
+<section class="history">
+    <aside class="sidebar">
+        <h2 class="sidebar-title">往昔星辰</h2>
+
+        <ul class="sidebar-nav">
+            <li><a href="/history/origin/">建站緣起</a></li>
+            <li><a href="/history/milestones">大事記</a></li>
+            <li><a href="/history/journals/">社刊</a></li>
+            <li><a href="/history/awards/">獲獎紀錄</a></li>
+            <li><a href="/history/memories/">幹部回憶錄</a></li>
+        </ul>
+    </aside>
+    
+    <main class="history-content">
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-meta.html" . }}
+            {{ .Content }}
+            <h2>相關文章</h2>
+        </article>  
+
+        <div class="stories-items">
+            {{ $sections := slice "article" "night-stories" }}
+            {{ $all := where .Site.RegularPages "Section" "in" $sections }}
+            {{ $currentsession := .Params.session }} 
+            {{ $active := where $all ".Params.archived" "!=" true }}
+            {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+            {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+            {{ $ordered := union $pinned $normal }}
+
+            {{ $list := where $ordered ".Params.session" $currentsession }}
+
+            {{ range $list }}
+            <a href="{{ .RelPermalink }}" class="stories-item">
+
+                {{ with .Params.cover }}
+                <div class="stories-thumb">
+                    <iframe src="{{ . | absURL }}" frameborder="0"></iframe>
+                </div>
+                {{ end }}
+
+                <div class="stories-meta">
+                    <h2>{{ .Title }}</h2>
+                    {{ partial "post-meta.html" . }}
+                    <p>{{ .Summary }}</p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </main>
+</section>
 {{ end }}
