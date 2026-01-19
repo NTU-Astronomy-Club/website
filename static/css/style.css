@@ -16,7 +16,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family:  "微軟正黑體", "Noto Sans TC", sans-serif;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    font-weight: 200;
     background-color: var(--bg);
     color: #e6e6e6;
     line-height: 1.6;
@@ -51,13 +52,9 @@ img, picture, video, iframe, svg {
     display: block;
 }
 
-h1 {
-    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
-    margin-bottom: 1.0rem;
-}
-
-h2 {
-    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Serif TC", "Noto Sans TC", "微軟正黑體", sans-serif;
+    letter-spacing: 0.03em;
     margin-bottom: 1.0rem;
 }
 
@@ -80,7 +77,7 @@ header {
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(96px);
-    background-color: #0b0c1a96;
+    background-color: #0c234099;
     padding: 0.2rem 1rem;
     transition: background-color 0.3s;
 }
@@ -92,7 +89,7 @@ nav {
 }
 
 .site-title {
-    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
+    font-family: "Chiron GoRound TC", "微軟正黑體", "Noto Serif TC", "Noto Sans TC", sans-serif;
     margin: 0.5rem 0rem 0.2rem 1rem;
 }
 
@@ -154,12 +151,12 @@ nav {
 
 /* ===== Footer ===== */
 footer {
-    margin-top: 0rem;
+    margin-top: 2rem;
     padding: 1rem;
     text-align: center;
     font-size: 0.85rem;
     color: #aaaaaa;
-    background-color: #0f1117;
+    background-color: #0c2340;
 }
 
 .contact-icons {

@@ -2,7 +2,8 @@
     margin-top: 0rem;
     margin-bottom: 2rem;
     margin-left: 0.2rem;
-    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
+    font-family: "Noto Serif TC", "Noto Sans TC", "微軟正黑體", sans-serif;
+    letter-spacing: 0.05em;
     font-size: 0.80rem;
     color: rgba(230, 230, 230, 0.65);
 
@@ -26,7 +27,8 @@
     line-height: 1.8;
     font-size: 0.95rem;
     color: #dcdcdc;
-    font-family: 'Chiron GoRound TC', "微軟正黑體", "Noto Sans TC", sans-serif;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    font-weight: 200;
 }
 
 .content h1 {
