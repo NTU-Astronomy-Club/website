@@ -19,14 +19,15 @@
             {{ .Content }}
         </article>
 
-        {{ range .Pages.ByDate }}
+        
         <section class="milestone-year">
+            {{ range .Pages.ByDate }}
             <article class="content">
                 <h3>{{ .Title }}</h3>
                 {{ .Content }}
             </article>
+            {{ end }}
         </section>
-        {{ end }}
     </main>
 </section>
 {{ end }}
