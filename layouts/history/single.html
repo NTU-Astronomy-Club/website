@@ -1,16 +1,6 @@
 {{ define "main" }}
 <section class="history">
-    <aside class="sidebar">
-        <h2 class="sidebar-title">往昔星辰</h2>
-
-        <ul class="sidebar-nav">
-            <li><a href="/history/origin/">建站緣起</a></li>
-            <li><a href="/history/milestones">大事記</a></li>
-            <li><a href="/history/journals/">社刊</a></li>
-            <li><a href="/history/awards/">獲獎紀錄</a></li>
-            <li><a href="/history/memories/">幹部回憶錄</a></li>
-        </ul>
-    </aside>
+    {{ partial "history-nav.html" . }}
     
     <section class="history-content">
         
