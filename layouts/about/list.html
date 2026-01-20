@@ -1,15 +1,6 @@
 {{ define "main" }}
 <section class="about-us">
-    <aside class="sidebar">
-        <h2 class="sidebar-title">認識我們</h2>
-
-        <ul class="sidebar-nav">
-            <li><a href="/about/philosophy/">社團宗旨與理念</a></li>
-            <li><a href="/about/activities/">活動介紹</a></li>
-            <li><a href="/about/officers/">現任幹部</a></li>
-            <li><a href="/about/bylaws/">社團規章</a></li>
-        </ul>
-    </aside>
+    {{ partial "about-us-nav.html" . }}
     
     <section class="about-content">
         
