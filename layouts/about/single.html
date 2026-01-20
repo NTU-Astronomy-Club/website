@@ -10,14 +10,14 @@
             <li><a href="/about/bylaws/">社團規章</a></li>
         </ul>
     </aside>
-
-    <main class="about-content">
+    
+    <section class="about-content">
         
         <article class="content">
             <h1>{{ .Title }}</h1>
             {{ partial "post-meta.html" . }}
             {{ .Content }}
         </article>
-    </main>
+    </section>
 </section>
 {{ end }}

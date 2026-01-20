@@ -1,13 +1,13 @@
 .post-meta {
     margin-top: 0rem;
-    margin-bottom: 2rem;
-    margin-left: 0.2rem;
+    margin-bottom: clamp(1rem, 4vw, 2rem);
+    margin-left: clamp(0.1rem, 2vw, 0.2rem);
     font-family: "Roboto", "Noto Serif TC", "Noto Sans TC", sans-serif;
     letter-spacing: 0.05em;
-    font-size: 0.80rem;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
     color: rgba(230, 230, 230, 0.65);
     display: flex;
-    gap: 1rem;
+    gap: clamp(0.5rem, 2vw, 1rem);
     flex-wrap: wrap;
 }
 
@@ -22,47 +22,67 @@
 .content {
     max-width: 55rem;
     margin: 0rem auto;
-    padding: 1.5rem 0.2rem;
+    padding: clamp(0.75rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 0.2rem);
     line-height: 1.8;
-    font-size: 0.95rem;
+    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
     color: #e6e9f0;
     font-family:  "Noto Sans TC", sans-serif;
     font-weight: 350;
     letter-spacing: 0.05em;
 }
 
+@media (max-width: 1023px) {
+    .content {
+        margin: 0rem auto;
+        padding: clamp(0.75rem, 3vw, 1.5rem) clamp(0.75rem, 3vw, 1.0rem);
+    }
+}
+
+@media (max-width: 639px) {
+    .content {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .post-meta {
+        margin-bottom: 1rem;
+        margin-left: 0.1rem;
+        font-size: 0.7rem;
+        gap: 0.5rem;
+    }
+}
+
 .content h1 {
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: clamp(0.8rem, 3vw, 1.2rem);
     letter-spacing: 0.05em;
 }
 
 .content h2 {
-    margin: 1rem 0rem 1.5rem 0rem;
-    font-size: 1.3rem;
-    padding-left: 0.5rem;
+    margin: clamp(0.75rem, 2vw, 1rem) 0rem clamp(1rem, 3vw, 1.5rem) 0rem;
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
+    padding-left: clamp(0.25rem, 2vw, 0.5rem);
 }
 
 .content h3 {
-    margin: 1rem 0rem 1.5rem 0rem;
-    font-size: 1.1rem;
-    padding-left: 1.0rem;
+    margin: clamp(0.75rem, 2vw, 1rem) 0rem clamp(1rem, 3vw, 1.5rem) 0rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    padding-left: clamp(0.5rem, 2vw, 1.0rem);
 }
 
 .content p {
-    margin-bottom: 1.2rem;
-    padding-left: 1.5rem;
+    margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .content ul,
 .content ol {
-    padding-left: 1.5rem;
-    margin: 1rem 0 1.5rem 1.5rem;
+    padding-left: clamp(1rem, 3vw, 1.5rem);
+    margin: clamp(0.75rem, 2vw, 1rem) 0 clamp(1rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .content li {
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-left: clamp(0.75rem, 2vw, 1.5rem);
+    margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
 }
 
 .content a {
@@ -75,58 +95,62 @@
 }
 
 .content blockquote {
-    margin: 2rem 0;
-    padding: 1.0rem 0rem 0.1rem 0rem;
+    margin: clamp(1.5rem, 4vw, 2rem) 0;
+    padding: clamp(0.75rem, 2vw, 1.0rem) 0rem clamp(0.05rem, 1vw, 0.1rem) 0rem;
     background: #0c234099;
-    border-left: 4px solid #00586e;
+    border-left: clamp(2px, 0.5vw, 4px) solid #00586e;
     border-radius: 0.4rem;
 }
 
 .content img {
     max-width: 100%;
     border-radius: 0.5rem;
-    margin: 1.5rem auto;
+    margin: clamp(1rem, 3vw, 1.5rem) auto;
     display: block;
 }
 
 .content iframe {
     max-width: 100%;
     border-radius: 0.5rem;
-    margin: 1.5rem auto;
+    margin: clamp(1rem, 3vw, 1.5rem) auto;
     display: block;
 }
 
 .content hr {
     border: none;
     border-top: 1px solid rgba(255,255,255,0.15);
-    margin: 3rem 0;
+    margin: clamp(2rem, 5vw, 3rem) 0;
 }
 
 .content pre {
     background: rgba(27,31,35,0.05);
-    padding: 1rem;
+    padding: clamp(0.75rem, 2vw, 1rem);
     border-radius: 0.5rem;
     overflow-x: auto;
-    margin: 1.5rem 0;
+    margin: clamp(1rem, 3vw, 1.5rem) 0;
+    font-size: clamp(0.8rem, 1.2vw, 0.9rem);
 }
 
 .content code {
     background: rgba(27,31,35,0.05);
-    padding: 0.2rem 0.4rem;
+    padding: clamp(0.1rem, 0.5vw, 0.2rem) clamp(0.2rem, 1vw, 0.4rem);
     border-radius: 0.3rem;
     font-family: 'Fira Code', monospace;
-    font-size: 0.95rem;
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
 }
 
 .content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
+    margin: clamp(1rem, 3vw, 1.5rem) 0;
+    overflow-x: auto;
+    display: block;
 }
 
 .content th,
 .content td {
     border: 1px solid rgba(255,255,255,0.1);
-    padding: 0.75rem 1rem;
+    padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(0.5rem, 2vw, 1rem);
     text-align: left;
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
 }
