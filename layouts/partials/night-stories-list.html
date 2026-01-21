@@ -16,7 +16,7 @@
 
             {{ with .Params.cover }}
             <div class="stories-thumb">
-                <img src="{{ . | absURL }}" alt="Cover image">
+                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
             </div>
             {{ end }}
 
