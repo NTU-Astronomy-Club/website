@@ -8,5 +8,27 @@
         </div>
     </section>
     {{ end }}
+
+    <section class="gallery-list">
+        <div class="gallery-items">
+            {{ $list := .RegularPages }}
+            {{ $active := (where $list ".Params.archived" "!=" true) }}
+            {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+            {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+            {{ $ordered := union $pinned $normal }}
+            {{ range $ordered }}
+            <a href="{{ .RelPermalink }}" class="gallery-item">
+
+                {{ with .Params.image }}
+                <div class="gallery-thumb">
+                    <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                </div>
+                {{ end }}
+
+                <div class="gallery-meta">
+                </div>
+            </a>
+            {{ end }}
+        </div>
 </section>
 {{ end }}
