@@ -111,7 +111,7 @@ nav {
     .nav-menu {
         gap: 0.25rem;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 0.25rem;
@@ -458,29 +458,38 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 0rem;
-        min-height: 0rem;
-        height: auto;
-        max-width: 80rem;
         width: 100%;
-        margin: 0 auto;
         padding: 2rem 1.5rem;
     }
-    .sidebar {
+    .sidebar-section {
+        position: sticky; 
         top: 5rem;
-        flex: 1 1 100%; 
+        width: 100%;
+        z-index: 999;
+        padding: 0.2rem 1rem;
+        background-color: var(--bg);
+    }
+    .sidebar {
+        display: block;
+        width: 100%;
         border-right: none;
         border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
-        padding-bottom: 0.5rem;
+        padding-bottom: 0rem;
         margin-bottom: 0rem; 
     }
+    .sidebar-title {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
     .sidebar-nav {
+        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap; 
+        justify-content: center;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         gap: 0.5rem;
-        padding-bottom: 0.25rem;
-        justify-content: flex-start;
+        padding: 0.25rem 0;
+        width: 100%;
     }
     .sidebar-nav a {
         white-space: nowrap;
