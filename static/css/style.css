@@ -111,7 +111,7 @@ nav {
     .nav-menu {
         gap: 0.25rem;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-start;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 0.25rem;
@@ -484,7 +484,7 @@ footer {
     .sidebar-nav {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         gap: 0.5rem;
