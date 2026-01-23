@@ -22,15 +22,6 @@ node_modules/
 dist/
 
 # Big media files
-*.png
-*.PNG
-*.jpg
-*.jpeg
-*.JPG
 *.webp
-*.gif
 *.mp4
-!hero_*.jpg
-!hero_*.png
-!news_*.jpg
-!news_*.png
+*.mov
