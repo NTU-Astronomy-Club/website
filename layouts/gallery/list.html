@@ -9,26 +9,47 @@
     </section>
     {{ end }}
 
-    <section class="gallery-list">
-        <div class="gallery-items">
+    <section class="gallery-imgs">
+        <div class="gallery-grid">
             {{ $list := .RegularPages }}
             {{ $active := (where $list ".Params.archived" "!=" true) }}
             {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
             {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
             {{ $ordered := union $pinned $normal }}
             {{ range $ordered }}
-            <a href="{{ .RelPermalink }}" class="gallery-item">
+                <div class="gallery-item"
+                    data-title="{{ .Title }}"
+                    data-author="{{ .Params.author }}"
+                    data-celestial="{{ .Params.celestial }}"
+                    data-date="{{ .Params.date }}"
+                    data-location="{{ .Params.location }}"
+                    data-focal="{{ .Params.focal_length }}"
+                    data-exposure="{{ .Params.exposure_time }}"
+                    data-equipment="{{ .Params.equipment }}"
+                    data-content="{{ .Content | plainify }}"
+                    data-image="{{ .Params.image | absURL }}">
 
-                {{ with .Params.image }}
-                <div class="gallery-thumb">
-                    <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
                 </div>
-                {{ end }}
-
-                <div class="gallery-meta">
-                </div>
-            </a>
             {{ end }}
         </div>
+
+        <div id="gallery-modal" class="modal hidden">
+            <div class="modal-content">
+                <img id="modal-image">
+                
+                <div class="modal-meta">
+                <h2 id="modal-title"></h2>
+                <p id="modal-author"></p>
+                <p id="modal-celestial"></p>
+                <p id="modal-date"></p>
+                <p id="modal-location"></p>
+                <p id="modal-equipment"></p>
+                <div id="modal-description"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ "js/modal.js" | absURL }}"></script>
 </section>
 {{ end }}
