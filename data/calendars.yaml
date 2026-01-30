@@ -1,0 +1,16 @@
+- name: "觀測活動和社課"
+  cid: "ngc5566@gmail.com"
+  color: "#5c61ac"
+  default: true
+- name: "星導工作坊和社課"
+  cid: "ol40hqc5tnvp70c1pgkso009o8@group.calendar.google.com"
+  color: "#f48fb1"
+  default: true
+- name: "天文物理讀書會"
+  cid: "38419451c13f4b5f2f4e35ce1ef83568a2ea9baa2ef4630eed3fbc6122a8d1c3@group.calendar.google.com"
+  color: "#82b1ff"
+  default: true
+- name: "天文社活動"
+  cid: "f270513a9aea01ef8c02dcca395dcbe30c7a913768ed2c651de0c3eda99ce956@group.calendar.google.com"
+  color: "#ff0000"
+  default: true

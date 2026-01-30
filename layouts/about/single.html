@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="about-us">
+    {{ partial "about-us-nav.html" . }}
+    
+    <section class="about-content">
+        
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-meta.html" . }}
+            {{ .Content }}
+        </article>
+    </section>
+</section>
+{{ end }}

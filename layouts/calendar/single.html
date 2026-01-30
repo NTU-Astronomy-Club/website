@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="calendar">
+    <section class="calendar-hero">
+        <h1>社團行事曆</h1>
+    </section>
+        
+    <div class="calendar-controls">
+        <p> 勾選欲顯示的日曆：</p>
+        <div class="checkbox-group">
+            {{ range .Site.Data.calendars }}
+            <label class="calendar-item" style="--cal-theme: {{ .color }}">
+                <input  type="checkbox"
+                        class="calendar-checkbox"
+                        data-cid="{{ .cid }}"
+                        data-color="{{ .color}}"
+                        {{ if .default }}checked{{ end }}>
+                {{ .name }}
+            </label>
+            {{ end }}
+        </div>
+    </div>
+
+    <div id="calendar-container" class="calendar-frame-container"></div>
+</section>
+
+<script src="{{ "js/calendar.js" | absURL }}"></script>
+{{ end }}

@@ -1,0 +1,57 @@
+.calendar {
+    margin: 0 auto;
+    text-align:center; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 100vh;
+    height: auto;
+    max-width: 80rem;
+    width: 100%;
+    padding: 2rem 1.5rem;   
+}
+
+.calendar-hero {
+    text-align: center;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+}
+
+.calendar-controls {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 0rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.calendar-item {
+    display: flex;
+    align-items: center;
+    background: #0f0f1e;
+    padding: 1.0rem 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid var(--cal-theme); 
+    font-size: 0.95rem;
+}
+
+.calendar-item:hover {
+    background: var(--cal-theme);
+    color: #fff;
+}
+
+.calendar-frame-container {
+    background: #0b0c1a;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 500rem rgba(0, 0, 0, 0.5);
+}

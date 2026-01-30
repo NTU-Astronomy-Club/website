@@ -1,0 +1,16 @@
+<div class="post-meta">
+    {{ $author := .Page.Params.author }}
+    {{ $date := .Page.Date }}
+    
+    {{ with $author }}
+        <span class="meta-item">{{ . }}</span>
+    {{ end }}
+    
+    {{ if and $author $date }}
+        <span class="meta-separator">|</span>
+    {{ end }}
+    
+    {{ with $date }}
+        <span class="meta-item">{{ .Format "2006-01-02" }}</span>
+    {{ end }}
+</div>

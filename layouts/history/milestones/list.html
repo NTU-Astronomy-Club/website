@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="history">
+    {{ partial "history-nav.html" . }}
+    
+    <main class="history-content">
+        
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </article>
+
+        
+        <section class="milestone-year">
+            {{ range .Pages.ByDate }}
+            <article class="content">
+                <h3>{{ .Title }}</h3>
+                {{ .Content }}
+            </article>
+            {{ end }}
+        </section>
+
+        <section class="Acknowledgments">
+            {{ with site.GetPage "history/acknowledgments" }}
+                <article class="content">
+                    <h2>致謝：社團歷史撰寫貢獻者</h2>
+                    {{ .Content }}
+                </article>
+            {{ end }}
+        </section>
+    </main>
+</section>
+{{ end }}

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="article">
+    {{ if eq .Paginator.PageNumber 1 }}
+        <section class="article-header">
+            <h1 class="article-title">{{ .Title }}</h1>
+            <div class="article-intro">
+                {{ .Content }}
+            </div>
+        </section>
+    {{ end }}
+</section>
+
+<section class="stories-list">
+
+    <div class="stories-items">
+        {{ $list := .RegularPages }}
+        {{ $active := (where $list ".Params.archived" "!=" true) }}
+        {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+        {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+        {{ $ordered := union $pinned $normal }}
+        {{ range $ordered }}
+        <a href="{{ .RelPermalink }}" class="stories-item">
+
+            {{ with .Params.cover }}
+            <div class="stories-thumb">
+                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+            </div>
+            {{ end }}
+
+            <div class="stories-meta">
+                <h2>{{ .Title }}</h2>
+                {{ partial "post-meta.html" . }}
+                <p>{{ .Summary }}</p>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+
+</section>
+
+{{ end }}

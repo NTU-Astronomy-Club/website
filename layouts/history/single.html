@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="history">
+    {{ partial "history-nav.html" . }}
+    
+    <section class="history-content">
+        
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-meta.html" . }}
+            {{ .Content }}
+        </article>
+    </section>
+</section>
+{{ end }}

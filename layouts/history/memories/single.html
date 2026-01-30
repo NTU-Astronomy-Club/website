@@ -1,0 +1,43 @@
+{{ define "main" }}
+<section class="history">
+    {{ partial "history-nav.html" . }}
+    
+    <section class="history-content">
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-meta.html" . }}
+            {{ .Content }}
+            <h2>相關文章</h2>
+        </article>  
+
+        <div class="stories-items">
+            {{ $sections := slice "article" "night-stories" }}
+            {{ $all := where .Site.RegularPages "Section" "in" $sections }}
+            {{ $currentsession := .Params.session }} 
+            {{ $active := where $all ".Params.archived" "!=" true }}
+            {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
+            {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
+            {{ $ordered := union $pinned $normal }}
+
+            {{ $list := where $ordered ".Params.session" $currentsession }}
+
+            {{ range $list }}
+            <a href="{{ .RelPermalink }}" class="stories-item">
+
+                {{ with .Params.cover }}
+                <div class="stories-thumb">
+                    <img src="{{ . | absURL }}" alt="Cover image">
+                </div>
+                {{ end }}
+
+                <div class="stories-meta">
+                    <h2>{{ .Title }}</h2>
+                    {{ partial "post-meta.html" . }}
+                    <p>{{ .Summary }}</p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+</section>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="history">
+    {{ partial "history-nav.html" . }}
+    
+    <section class="history-content">
+        <article class="content">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-meta.html" . }}
+            {{ .Content }}
+        </article>
+
+        {{ range .Site.Data.memories }}
+            <div class="contact-forms">
+                <a href="{{ .session }}" target="_self" class="btn-form">
+                    {{ .session }}
+                </a>
+            </div>
+        {{ end }}
+        </section>
+</section>
+{{ end }}
