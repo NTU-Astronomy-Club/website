@@ -833,30 +833,30 @@ footer {
 }
 
 .modal {
-  position: fixed;
-  inset: 0rem;
-  background: rgba(0,0,0,.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 990;
+    position: fixed;
+    inset: 0rem;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 990;
 }
 
 .modal.hidden {
-  display: none;
+    display: none;
 }
 
 .modal-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  max-width: 90vw;
-  max-height: 90vh;
-  background: #0b0c1a;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: #0b0c1a;
 }
 
 .modal-content img {
-  max-height: 90vh;
-  object-fit: contain;
+    max-height: 90vh;
+    object-fit: contain;
 }
 
 /* contact us */
