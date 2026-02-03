@@ -14,6 +14,8 @@ publishdate: 2026-01-01T21:00:00+08:00 # 發文日期
 draft: false          # 是否是草稿 
 pinned: false        # 是否置頂（可省略）
 archived: false     # 是否典藏（可省略）
+
+draft: true
 ---
 
 測試用拉完了冗照 勿公開
