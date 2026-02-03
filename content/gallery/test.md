@@ -1,7 +1,8 @@
 ---
 image: https://duk.tw/eCyqmM.jpg
 title: "建天42冗出品"  # 作品名稱
-author: "郭睿閎 48th 儀器"   # 作者
+author: "郭睿閎"   # 作者
+position: "48th 儀器" # 幹部職位 / 社員
 celestial: "M42"  # 天體編號/星座
 date: "2022-07-31"    # 日期
 location: "五峰國小"  # 地點
