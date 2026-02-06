@@ -9,26 +9,73 @@
     </section>
     {{ end }}
 
-    <section class="gallery-list">
-        <div class="gallery-items">
+    <section class="gallery-imgs">
+        <div class="gallery-grid">
             {{ $list := .RegularPages }}
             {{ $active := (where $list ".Params.archived" "!=" true) }}
             {{ $pinned := (where $active ".Params.pinned" true ).ByDate.Reverse }}
             {{ $normal := (where $active ".Params.pinned" "!=" true).ByDate.Reverse }}
             {{ $ordered := union $pinned $normal }}
             {{ range $ordered }}
-            <a href="{{ .RelPermalink }}" class="gallery-item">
+                <div class="gallery-item"
+                    data-title="{{ .Title }}"
+                    data-author="{{ .Params.author }}"
+                    data-position="{{ .Params.position }}"
+                    data-celestial="{{ .Params.celestial }}"
+                    data-date="{{ .Date.Format "2006-01-02" }}"
+                    data-location="{{ .Params.location }}"
+                    data-focal_length="{{ .Params.focal_length }}"
+                    data-exposure_time="{{ .Params.exposure_time }}"
+                    data-equipment="{{ .Params.equipment }}"
+                    data-content="{{ .Content | plainify }}"
+                    data-image="{{ .Params.image | absURL }}">
 
-                {{ with .Params.image }}
-                <div class="gallery-thumb">
-                    <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
                 </div>
-                {{ end }}
-
-                <div class="gallery-meta">
-                </div>
-            </a>
             {{ end }}
         </div>
+
+        <div id="lightbox" class="lightbox hidden">
+            <div class="lightbox-backdrop"></div>
+
+            <div class="lightbox-content">
+                <button class="lightbox-close" aria-label="Close">✕</button>
+
+                <div class="lightbox-image">
+                    <img id="lb-image" src="" alt="">
+                </div>
+
+                <div class="lightbox-info">
+                    <h2 id="lb-title"></h2>
+                    
+                    <p class="lb-meta">
+                        <span id="lb-author"></span>
+                        <span class="meta-separator">|</span>
+                        <span id="lb-position"></span>
+                        <span class="meta-separator">|</span>
+                        <span id="lb-celestial"></span><br>
+                        
+                        <span id="lb-date"></span>
+                        <span class="meta-separator">|</span>
+                        <span id="lb-location"></span><br>
+
+                        
+                        <span id="lb-focal_length"></span>
+                        <span class="meta-separator">|</span>
+                        <span id="lb-exposure_time"></span>
+                        <span class="meta-separator">|</span>
+                        <span id="lb-equipment"></span>
+                    </p>
+
+                    <div class="lightbox-description">
+                        <p id="lb-content"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="{{ "js/modal.js" | absURL }}"></script>
 </section>
 {{ end }}
