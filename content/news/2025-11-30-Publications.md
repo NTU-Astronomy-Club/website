@@ -10,5 +10,5 @@ archived: false     # 是否典藏（可省略）
 image: "images/news/news_2.png"
 ---
 
-- 睽違五年的65社刊發行中，歡迎預購！
-- [預購表單](https://forms.gle/FEkeUytQUhYpHH4c9)
+- 睽違五年的65社刊發行中，歡迎訂購！
+- [訂購表單](https://forms.gle/FEkeUytQUhYpHH4c9)
