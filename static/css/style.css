@@ -383,6 +383,8 @@ footer {
 .news-info {
     padding: 0.5rem 1rem 1rem 1rem;
     font-size: 1.0rem;
+    max-height: 30vh;
+    overflow-y: auto;
 }
 
 .news-info p {
