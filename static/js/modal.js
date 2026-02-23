@@ -9,10 +9,10 @@ document.querySelectorAll(".gallery-item").forEach(item => {
     document.getElementById("lb-celestial").textContent = item.dataset.celestial || "";
     document.getElementById("lb-date").textContent = item.dataset.date || "";
     document.getElementById("lb-location").textContent = item.dataset.location || "";
-    document.getElementById("lb-equipment").textContent = item.dataset.equipment || "";
-    document.getElementById("lb-exposure_time").textContent = item.dataset.exposure_time || "";
-    document.getElementById("lb-focal_length").textContent = item.dataset.focal_length || "";
-    document.getElementById("lb-content").textContent = item.dataset.content || "";
+    
+    const hiddenContent = item.querySelector(".gallery-hidden-content");
+    document.getElementById("lb-content").innerHTML =
+      hiddenContent ? hiddenContent.innerHTML : "";
 
     lightbox.classList.remove("hidden");
   });
