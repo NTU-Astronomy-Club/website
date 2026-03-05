@@ -9,7 +9,8 @@ pinned: false        # 是否置頂（可省略）
 archived: false     # 是否典藏（可省略）
 
 summary: "2025 夏季觀測回顧。地點：觀星園。時間：2025/07/23~2025/07/25" # list 頁顯示的摘要
-session: ["48"] # 如果你是幹部，可以把屆數加進來。不是幹部的話可以留空
+session: "48" # 用於幹部回憶錄的分類
+semester: "114-1" # 用於之後的分類
 
 cover: "images/night-stories/stargazers/48/summer/Group_photo.JPG" # 封面圖片
 

@@ -9,6 +9,3 @@ enableGitInfo = true
   category = "categories"
   session = "sessions"
 
-[markup.goldmark.renderer]
-  unsafe = true
-
