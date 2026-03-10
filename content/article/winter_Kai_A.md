@@ -2,7 +2,7 @@
 title: "2026冬季觀測個人心得" #頁面標題
 author: "邱柏凱" #作者
 date: 2026-03-08 # 顯示日期
-publishdate: 2026-03-08T21:00:00+08:00 # 發文日期
+publishdate: 2026-03-08T20:00:00+08:00 # 發文日期
 
 draft: false          # 是否是草稿 
 pinned: false        # 是否置頂（可省略）
