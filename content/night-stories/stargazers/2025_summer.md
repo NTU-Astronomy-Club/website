@@ -14,7 +14,7 @@ semester: "114-1" # 用於之後的分類
 
 cover: "images/night-stories/stargazers/48/summer/Group_photo.JPG" # 封面圖片
 
-# 內文從h2開始，h1 是用來顯示title的
+# 內文從h2開始，h1 是用來顯示title的 
 # 底下需要引入圖片的地方 可以直接寫 ![文字](圖片名稱) 並上傳對應圖片，網管會負責把圖片搬過來
 ---
 
