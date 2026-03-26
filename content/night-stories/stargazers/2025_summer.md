@@ -1,7 +1,7 @@
 ---
 title: "2025 夏觀回顧" #頁面標題
 author: "蘇柏元" #作者
-date: 2025-07-23 # 顯示日期
+date: 2026-03-04 # 顯示日期
 publishdate: 2026-03-05T11:00:00+08:00 # 發文日期
 
 draft: false          # 是否是草稿 
@@ -14,7 +14,7 @@ semester: "114-1" # 用於之後的分類
 
 cover: "images/night-stories/stargazers/48/summer/Group_photo.JPG" # 封面圖片
 
-# 內文從h2開始，h1 是用來顯示title的
+# 內文從h2開始，h1 是用來顯示title的 
 # 底下需要引入圖片的地方 可以直接寫 ![文字](圖片名稱) 並上傳對應圖片，網管會負責把圖片搬過來
 ---
 
