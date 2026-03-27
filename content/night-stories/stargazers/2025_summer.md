@@ -28,9 +28,9 @@ cover: "images/night-stories/stargazers/48/summer/Group_photo.JPG" # 封面圖�
 
 使用比新台幣更為創新的貨幣遊玩投資遊戲之後，便是令人期待的環節：吃火鍋。兩天的火鍋各有不同的風味，除了吃起來也是好吃的火鍋以外，更是有不同的口味可以選擇。可惜的是本次活動尚未有湯圓入鍋的創舉，有待天文社幹部進行開發。吃完美味的火鍋之後（我吃的是羊肉爐口味），小隊領取了活動的獎品，之後進入第二天的星導環節。儀器在本日晚上雖尚未體悟湯圓入火鍋的洞見，但開創令人聞風喪膽的儀器新猷：享受觀星園民宿溫暖的床。眾所周知民宿溫暖的床是給認真參與白天活動的小隊員在沒有開天的晚上的安慰，然而儀器卻挑戰了台大天文社的傳統，可說是富有批判性的新銳思想實踐。
 
-![2025夏季觀測儀器冗照.jpg](/images/night-stories/stargazers/48/summer/sleep.jpg)
+![2025夏季觀測-儀器冗照.jpg](/images/night-stories/stargazers/48/summer/sleep.jpg)
 
 第三天早上一如往常是大合照和整理行李，準備依依不捨向觀星園說再見的一天。但是台大天文社果然還是台大天文社，所以我們在吃了好吃的早餐以後非常依依不捨的向偉大的觀星園說再見，為大開天的夏季觀測劃下了美好的句點。很期待下次再到觀星園觀測！
 
-![2025夏季觀測大合照.jpg](/images/night-stories/stargazers/48/summer/Group_photo.JPG)
-![2025夏季觀測幹部們.jpg](/images/hero/hero_1.jpg)
+![2025夏季觀測-大合照.jpg](/images/night-stories/stargazers/48/summer/Group_photo.JPG)
+![2025夏季觀測-幹部們.jpg](/images/hero/hero_1.jpg)
