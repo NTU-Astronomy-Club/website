@@ -24,7 +24,8 @@ cover: "images/night-stories/stargazers/48/winter/cover.png" # 封面圖片
 
 對於星空有著不一樣的悸動，面對溫度也有不一樣的忍受。各式各樣的牌落在床上，從撲克牌、炸彈人到萬箭齊發，人數也一點一點地往上，更隨著深夜一點一點退卻，更加認識各式各樣的人，情感在此時也更快速的流動。
 
-![2026冬季觀測星空.jpg](/images/night-stories/stargazers/48/winter/img2.jpg)
+![2026冬季觀測-星空和流星.jpg](/images/night-stories/stargazers/48/winter/img2.jpg)
+(拍攝者：46th 副社長 林妙樺)
 
 繞行梅峰，豐富的自然生態，望向疊疊山巒。讓我感動的不是各種獨特植物與花卉，而是壯闊山巒，還有與之形成對比，享受壯闊山林沐浴其中的 dob。
 
@@ -38,10 +39,11 @@ cover: "images/night-stories/stargazers/48/winter/cover.png" # 封面圖片
 
 武嶺，是許多地方許多活動的分界點。公路旁結滿冰霜染白了一片綠地，積雪填滿了階梯兩側，小鎮佇立於遠方峽谷間，陽光穿透縫隙照在半山腰上。合歡主峰聚集了天文社的人潮，大家都征服了一座百岳。許多人也征服了一條公路。
 
-![2026冬季觀測合歡山.jpg](/images/night-stories/stargazers/48/winter/img1.jpg)
+![2026冬季觀測-合歡山.jpg](/images/night-stories/stargazers/48/winter/img1.jpg)
+(拍攝者：48th 美宣 林書荷)
 
 在冬季吃著大碗火鍋，隔著一扇窗，內外就是兩種溫度。木星仍舊在冬季星空，中國古星官講究行星的去留。十三個人十三張撲克牌，演出兩個劇本。房間內的桌遊仍舊在夜晚扮演重要的角色。
 
 可惜著東邊的山巒，日出仍舊美麗，卻只透露出天邊的金黃。早晨豐盛的一餐，也宣示著我們的離別。
 
-![2026冬季觀測大合照.jpg](/images/night-stories/stargazers/48/winter/group.JPG)
+![2026冬季觀測-大合照.jpg](/images/night-stories/stargazers/48/winter/group.JPG)
