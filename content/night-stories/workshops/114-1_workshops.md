@@ -52,7 +52,7 @@ cover: "images/night-stories/workshops/114-1_workshops/cover.PNG" # 封面圖片
 
 ### 西洋星空概論暨西洋星空夏秋篇(講者：楊硯堯)
 
-![114-1星導工作坊-楊硯堯](/images/night-stories/workshops/114-1_workshops/114-1-workshops-2-5.jpg)
+![114-1星導工作坊-楊硯堯](/images/night-stories/workshops/114-1_workshops/114-1-workshops-2-5.JPG)
 
 ![114-1星導工作坊-西洋星空](/images/night-stories/workshops/114-1_workshops/114-1-workshops-2-1.jpg)
 第二堂課，是由我主講西洋星空概論和夏天和秋天的西洋星空，當天的教室依舊熱鬧。
