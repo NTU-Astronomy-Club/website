@@ -7,7 +7,7 @@
     <div class="calendar-controls">
         <p> 勾選欲顯示的日曆：</p>
         <div class="checkbox-group">
-            {{ range hugo.Data.calendars }}
+            {{ range .Site.Data.calendars }}
             <label class="calendar-item" style="--cal-theme: {{ .color }}">
                 <input  type="checkbox"
                         class="calendar-checkbox"
