@@ -1,5 +1,5 @@
 ---
-image: "images/gallery/49th/richard/final_California Nubela - 鄒孟熹.png"
+image: "images/gallery/49th/richard/final_California Nubela - 鄒孟熹.jpg"
 title: "鄒孟熹-NGC1499 - California Nebula in SHO"  # 作品名稱
 author: "鄒孟熹"   # 作者
 position: "49th 社長" # 幹部職位 / 社員
