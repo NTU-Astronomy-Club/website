@@ -7,7 +7,7 @@
                     <h3>社辦地址</h3>
                     <p>大安區羅斯福路四段1號第一學生活動中心242室, Taipei, Taiwan, 106</p>
                 </div>
-                {{ range .Site.Data.link }}
+                {{ range hugo.Data.link }}
                 <div class="contact-forms">
                     <a href="{{ .link }}" target="_blank" class="btn-form">
                         {{ .title }}

@@ -3,7 +3,7 @@
     <section id="hero">
         <div class="carousel-container">
             <div class="carousel-track">
-                {{ range .Site.Data.hero }}
+                {{ range hugo.Data.hero }}
                     <div class="slide">
                         <img src="{{ .image | absURL }}" alt="{{ .title }}">
                         <div class="slide-info">

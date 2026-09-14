@@ -9,7 +9,7 @@
             {{ .Content }}
         </article>
 
-        {{ range .Site.Data.memories }}
+        {{ range hugo.Data.memories }}
             <div class="contact-forms">
                 <a href="{{ .session }}" target="_self" class="btn-form">
                     {{ .session }}
