@@ -12,7 +12,7 @@ summary: "2026 夏季觀測回顧。地點：觀星園。時間：2026/07/15~202
 session: "49" # 用於幹部回憶錄的分類
 semester: "115-1" # 用於之後的分類
 
-cover: "images/night-stories/stargazers/49/summer/Group_photo.JPG" # 封面圖片
+cover: "images/night-stories/stargazers/49/summer/Group_photo.jpg" # 封面圖片
 
 # 內文從h2開始，h1 是用來顯示title的 
 # 底下需要引入圖片的地方 可以直接寫 ![文字](圖片名稱) 並上傳對應圖片，網管會負責把圖片搬過來
@@ -32,9 +32,9 @@ cover: "images/night-stories/stargazers/49/summer/Group_photo.JPG" # 封面圖�
 
 ![2026夏季觀測-星空.jpg](/images/night-stories/stargazers/49/summer/sky.jpg)
 (拍攝者：49th 網管 楊硯堯)
-![2026夏季觀測-星導.jpg](/images/night-stories/stargazers/49/summer/class.jpg)
+![2026夏季觀測-星導.jpg](/images/night-stories/stargazers/49/summer/Class.jpg)
 (拍攝者：48th 美宣 林書荷)
-![2026夏季觀測-星導.jpg](/images/night-stories/stargazers/49/summer/class2.jpg)
+![2026夏季觀測-星導.jpg](/images/night-stories/stargazers/49/summer/Class2.jpg)
 (拍攝者：49th 網管 楊硯堯)
 
 第二天一早搭著老闆的車前往清境農場。天空放晴了，屬於夏天的烈陽灑在青青草原上。參加活動的人迎著陽光在園區裡尋找會隱身的小人，也和綿羊來了許多親密接觸。清境農場的羊非常多，他們很愛跑來跑去也很貪吃，但卻沒有這麼愛叫，仔細聽...會發現「咩!」其實是旁邊的朋友在學羊叫(?)。接近尾聲，大家順便看了馬術秀，正好讓draco交到了來自蒙古的新朋友。
@@ -53,4 +53,4 @@ cover: "images/night-stories/stargazers/49/summer/Group_photo.JPG" # 封面圖�
 
 隨後，幹部們協力將行李與儀器搬上巴士，大家也帶著滿滿的回憶踏上下山的路。回程的巴士格外安靜，或許是熬了兩夜沒睡，也或許是還沉浸在這幾天的點滴之中。窗外的山景向後退去，而屬於這個夏天的故事，也在巴士緩緩駛離清境時畫下句點。
 
-![2026夏季觀測-大合照.jpg](/images/night-stories/stargazers/49/summer/Group_photo.JPG)
+![2026夏季觀測-大合照.jpg](/images/night-stories/stargazers/49/summer/Group_photo.jpg)
