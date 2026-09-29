@@ -53,4 +53,4 @@ cover: "images/night-stories/stargazers/49/summer/Group_photo.JPG" # 封面圖�
 
 隨後，幹部們協力將行李與儀器搬上巴士，大家也帶著滿滿的回憶踏上下山的路。回程的巴士格外安靜，或許是熬了兩夜沒睡，也或許是還沉浸在這幾天的點滴之中。窗外的山景向後退去，而屬於這個夏天的故事，也在巴士緩緩駛離清境時畫下句點。
 
-![2025夏季觀測-大合照.jpg](/images/night-stories/stargazers/48/summer/Group_photo.JPG)
+![2026夏季觀測-大合照.jpg](/images/night-stories/stargazers/49/summer/Group_photo.JPG)
